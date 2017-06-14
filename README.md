@@ -6,6 +6,8 @@ You can report problems or help improve m-core.org by opening an issue or a [pul
 
 ## Setting Up Your Environment
 
+Install npm
+
 Run commands
 
     sudo npm i -g gulp bower browser-sync
