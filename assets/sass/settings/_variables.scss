@@ -1,0 +1,47 @@
+$magi-blue-color: #1d62f0;
+$magi-green-color: #4cd900;
+$magi-red-color: #f32853;
+//$magi-font-size-content: 0.95em;
+$magi-font-size-content: 16px;
+$magi-font-weight-content: 300;
+$magi-line-height-content: 1.4;
+
+// $font-family-base: "Raleway", "Droid Sans", Helvetica, sans-serif;
+$font-family-base: "Roboto", "Helvetica Neue", Helvetica, sans-serif;
+$font-family-heading: "Roboto", "Helvetica Neue", Helvetica, sans-serif;
+$font-family-serif: "Droid Serif", sans-serif;
+$line-height: 1.4;
+$font-size-base: 18px;
+
+$gutter: 20px;
+$gutter-padding: ($gutter/2);
+$default-feature: min-width;
+
+$container-tablet-width  : 90%;
+//$container-desktop-width : 48em;
+//$container-desktop-width : 52em;
+$container-desktop-width : 72em;
+
+$screen-phone   : 30em;
+$screen-tablet  : 37em;
+//$screen-desktop : 56em;
+$screen-desktop : 80em;
+
+//$primary-color: #f32853;
+$primary-color: $magi-blue-color;
+
+$white-color: #efefef;
+$silver-color: darken($white-color, 22%); // ~ #ccc
+$black-color: #000;
+$gray-color: darken($white-color, 42%); // ~ #999
+
+$bg-color: #efefef;
+$txt-color: rgba(lighten($black-color, 3%), .9);
+
+$blue-color: $magi-blue-color;
+
+$border-color: #f1f2f3;
+
+// link
+$link-color: $primary-color;
+$link-hover-color: darken($link-color, 10%);

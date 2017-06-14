@@ -1,0 +1,98 @@
+.about {
+  position: relative;
+  width: 100%;
+  padding: 50px 0;
+}
+
+.container2 {
+  position: relative;
+  width: 100%;
+//  padding-right: 15px;
+//  padding-left: 15px;
+//  margin-right: auto;
+//  margin-left: auto;
+}
+
+.row {
+//  margin-right: -15px;
+//  margin-left: -15px;
+}
+
+.lead {
+  margin-bottom: 20px;
+  font-size: $magi-font-size-content;
+  font-weight: $magi-font-weight-content;
+  line-height: $magi-line-height-content;
+}
+
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.text-justify {
+  text-align: justify;
+}
+.text-nowrap {
+  white-space: nowrap;
+}
+.text-lowercase {
+  text-transform: lowercase;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.clear:after{content:"."; display:block; height:0; clear:both; visibility:hidden; line-height:0;}
+.clear{display:block; clear:both;}
+
+.one_quarter, .two_quarter, .three_quarter, .four_quarter{display:block; float:left; margin:0 20px 0 0;}
+.one_quarter{width:225px;}
+.two_quarter{width:470px;}
+.three_quarter{width:715px;}
+.four_quarter{width:960px; float:none; margin-right:0; clear:both;}
+
+.one_third, .two_third, .three_third, .one_fifth{display:block; float:left; margin:0 0 0 0;}
+.one_third{width:200px;}
+.two_third{width:630px;}
+.three_third{width:960px; float:none; margin-right:0; clear:both;}
+.one_fifth{width:160px;}
+
+.lastbox{margin-right:0;}
+
+/* ----------------------------------------------Wrapper-------------------------------------*/
+
+div.wrapper2{display:block; width:100%; margin:0; padding:0; text-align:left;}
+
+#container2{padding:30px 0;}
+#container2 section{display:block; width:100%; margin:0 0 50px 0; padding:0;}
+#container2 .last{margin:0;}
+#container2 .more{text-align:right;}
+
+#container2 #content{display:block; width:100%; line-height:1.5em;}
+
+#container2 #content article{}
+#container2 #content article h2{font-size: 1.75em; line-height: 1.5em;}
+#container2 #content article h3{font-size:15px; margin-bottom:15px;}
+#container2 #content article p{margin:0; padding:0px;}
+#container2 #content article img{float:left; width:80px; height:80px; margin:0px 10px 10px 0; padding:4px; border:1px solid #DEDEDE;}
+#container2 #content article footer{margin:10px 0 0 0;}
+
+.bluecolor {
+  color: $magi-blue-color;
+}
+
+.greencolor {
+  color: $magi-green-color;
+}
+
+.redcolor {
+  color: $magi-red-color;
+}

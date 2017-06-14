@@ -1,0 +1,15 @@
+{
+  "name": "Coin MAGI",
+  "version": "1.0.0",
+  "homepage": "https://github.com/m-coin/m-core.org",
+  "private": true,
+  "license": "MIT",
+  "dependencies": {
+    "classie": "~1.0.1",
+    "jquery": "~2.1.4",
+    "jquery-github": "~0.4.0",
+    "simple-jekyll-search": "~1.0.8",
+    "swipebox": "~1.4.1",
+    "wow": "~1.1.2"
+  }
+}

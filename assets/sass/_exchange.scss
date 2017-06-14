@@ -1,0 +1,196 @@
+$exchange-spacing-y: 10px;
+$exchange-spacing-x: 10px;
+
+.exchange {
+  @extend .card;
+//  width: 100%;
+  background-color: #fff;
+  font-size: 15px;
+  font-weight: $magi-font-weight-content;
+  line-height: $magi-line-height-content;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  overflow: hidden;
+  padding: $exchange-spacing-y ($exchange-spacing-x / 2) 0;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    background-color: rgba(76, 217, 0, .1); 
+  }
+
+  @include media($screen-tablet) {
+    padding: $exchange-spacing-y $exchange-spacing-x 0;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+  }
+
+  h1 {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin-bottom: .5em;
+
+    @include media($screen-tablet) {
+      font-size: 1.9em;
+    }
+  }
+
+  .exchange-header {
+    margin-bottom: 2em;
+    border-bottom: 1px solid $border-color;
+  }
+
+  .exchange-meta {
+    display: block;
+
+    span, time {
+      font-size: 1em;
+      font-style: italic;
+      margin-right: 10px;
+    }
+
+    span, time, a {
+      color: $txt-color;
+    }
+  }
+
+  blockquote,
+  .highlight,
+  .disqus {
+    margin-left: -($exchange-spacing-x);
+    margin-right: -($exchange-spacing-x);
+  }
+
+  .disqus {
+    background-color: #f7f8f9;
+    border-top: 1px solid #E3E3E3;
+    padding-bottom: $exchange-spacing-y;
+    padding-top: 2em;
+  }
+
+  .disqus,
+  .highlight pre {
+    padding-left: $exchange-spacing-x;
+    padding-right: $exchange-spacing-x;
+  }
+
+  .highlight pre {
+    padding-top: $exchange-spacing-y;
+    padding-bottom: $exchange-spacing-y;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+body:not(.single) {
+  .exchange {
+    padding-bottom: $exchange-spacing-y;
+    margin-bottom: 4em;
+
+    .exchange-title {
+      @include font-size(22px);
+      margin-bottom: .2em;
+
+      @include media($screen-tablet) {
+        @include font-size(30px);
+        line-height: $line-height;
+      }
+    }
+
+    .exchange-header {
+      margin-bottom: .5em;
+    }
+
+    .exchange-title,
+    a.read-more {
+      text-decoration: none;
+      color: $txt-color;
+
+      &:focus,
+      &:hover {
+        color: $link-hover-color;
+      }
+    }
+  }
+}
+
+.exchange-footer {
+  position: relative;
+  margin: em(30px) 0 0;
+  padding: em(40px) 0 0;
+  border-top: $border-color 1px solid;
+
+  h4 {
+    @include font-size(18px);
+    font-weight: 300;
+    margin: 0;
+  }
+
+  p {
+    margin: em(10px) 0;
+    @include font-size(14px);
+  }
+
+  .author {
+    margin-right: 180px;
+  }
+
+  h4 a {
+    color: #2e2e2e;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .share {
+    position: absolute;
+    width: em(140px);
+    top: em(60px);
+    right: 0;
+    text-align: center;
+
+    a {
+      font-size: 1.6em;
+      display: inline-block;
+      margin: 0 .3em 0;
+      color: $gray-color;
+      text-decoration: none;
+      border: none;
+
+      &:hover {
+        color: $txt-color;
+      }
+    }
+  }
+
+  @include media(max-width $screen-phone) {
+    .author,
+    .share {
+      float: none;
+      width: 100%;
+      position: relative;
+      margin: 0;
+      text-align: center;
+      clear: both;
+    }
+
+    .share {
+      top: auto;
+      margin-top: em(40px);
+    }
+  }
+}
+
+.exchange_row_win, .exchange_row_others{display:block; float:center; margin:0 35px 0 0;}
+.exchange_row_win{width:200px;}
+.exchange_row_others{width:155px;}
+.exchange_lastbox{margin-right:0;}

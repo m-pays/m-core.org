@@ -1,0 +1,16 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+layout: blog
+lang: en
+post_class: page-template
+slug: home
+title: MAGI
+---
+
+{% for post in paginator.posts %}
+  {% include layout/article.html %}
+{% endfor %}
+
+{% include layout/pagination.html %}

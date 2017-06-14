@@ -1,0 +1,63 @@
+.banner {
+  padding: 8em 2.5em 4em;
+  background: #2B7369 url("img/bg-1.png") center top fixed;
+  height: 100%; 
+
+//  background: #2B7369 url("img/milky-way-923738_1920.jpg") center top fixed;
+  
+//  background: url("img/1920.jpg") no-repeat center center scroll;
+  background-size: cover;
+  line-height: 1.75;
+  text-align: center;
+
+  :last-child {
+    margin-bottom: 0;
+  }
+
+  img {
+    padding: 3px;
+    border: 1px solid rgba($white-color, .3);
+}
+
+  h2 {
+    font-family: $font-family-base;
+    color: #ddd;
+//    margin-bottom: 1.75em;
+    font-size: 1.4em;
+    text-transform: none;
+    font-weight: 200;
+
+    strong {
+      color: #fff;
+      margin-top: 18%;
+      margin-bottom: 0.8em;
+      display: block;
+      font-weight: 400;
+      font-size: 1.2em;
+      line-height: 1.35;
+    }
+  }
+
+  @include media($screen-tablet) {
+    padding: 10em 1.6em;
+
+    h2 strong {
+      margin-top: 4em;
+      font-size: 1.6em;
+    }
+  }
+
+  @include media($screen-desktop) {
+    padding: 18em 1.6em;
+
+    h2 {
+      font-size: 1.2em;
+
+      strong {
+        font-size: 1.8em;
+      }
+    }
+  }
+
+
+}

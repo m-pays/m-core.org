@@ -1,0 +1,26 @@
+{% strip %}<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+
+<head>
+{% include layout/head.html %}
+</head>
+
+<body class="{% if page.post_class %}{{page.post_class}}{% endif %} {% if page.slug %}{{page.slug}}{% endif %}">
+  
+  {% include layout/head-menu.html %}
+
+  {% if page.slug == 'home' %}
+    {% include layout/getting-started.html %}
+  {% endif %}
+
+  {% include layout/content.html %}
+
+  {% include layout/footer.html %}
+  {% include layout/search-modal.html %}
+
+    {% javascript main %}
+    {% if page.slug == 'projects' %}
+        {% javascript jquery.github %}
+    {% endif %}
+</body>
+</html>{% endstrip %}
