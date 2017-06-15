@@ -3183,18 +3183,6 @@ body:not(.single) .feature a.read-more:hover {
   }
 }
 
-/* line 191, ../sass/_feature.scss */
-.feature_2_column {
-  display: block;
-  float: left;
-  margin: 0 10px 0 15px;
-}
-
-/* line 192, ../sass/_feature.scss */
-.feature_2_column {
-  width: 45%;
-}
-
 /* line 194, ../sass/_feature.scss */
 .feature_lastbox {
   margin-right: 0;
@@ -3402,7 +3390,7 @@ body:not(.single) .download a.read-more:hover {
 /* line 193, ../sass/_download.scss */
 .dwnld_row_win, .dwnld_row_others {
   display: block;
-  float: center;
+  /* float: center; Theres only left or right */
   margin: 0 35px 0 0;
 }
 
@@ -4057,3 +4045,54 @@ div.wrapper2 {
 .fa-instagram:before {
   content: "";
 }
+
+/* ex33s made these changes */
+
+section.feature_2_column {
+  display:flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+section.feature_2_column > div {
+  position: relative;
+  margin: 20px;
+  width: 45%;
+  min-height: 300px;
+  padding: 30px;
+}
+
+section.feature_2_column footer {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+
+div.col-lg-16 {
+  padding: 10px;
+}
+
+div.exchange {
+  min-height: 170px;
+}
+div.download {
+  min-height: 210px;
+}
+
+
+
+/* For mobile, this need to be last */
+@media (max-width: 768px) {
+  section.feature_2_column > div {
+    width: 90%;
+    margin: 10px 0;
+  }
+  .navbar {
+    display: none;
+  }
+}
+
+
+/* end of ex33s changes */
