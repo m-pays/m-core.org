@@ -1,27 +1,37 @@
-/*======================================
-=            Page styles            =
-======================================*/
+$page-spacing-y: 10px;
+$page-spacing-x: 10px;
 
-$post-spacing-y: 40px;
-$post-spacing-x: 50px;
-$post-small-spacing: 15px;
-
-.post {
+.page {
   @extend .card;
+//  width: 100%;
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: $magi-font-weight-content;
+  line-height: $magi-line-height-content;
   padding-bottom: 0;
-  margin-bottom: 0em;
+  margin-bottom: 0;
   overflow: hidden;
-  padding: $post-spacing-y ($post-spacing-x / 2) 0;
+  padding: $page-spacing-y ($page-spacing-x / 2) 0;
+  cursor: pointer;
+  float: left;
+  color: $magi-blue-color;
+  margin-left: $magi-margin-left;
+
+  &:hover,
+  &:active {
+    background-color: rgba(76, 217, 0, .1); 
+    text-decoration: underline;
+  }
 
   @include media($screen-tablet) {
-    padding: $post-spacing-y $post-spacing-x 0;
+    padding: $page-spacing-y $page-spacing-x 0;
   }
 
   img {
     display: block;
     max-width: 100%;
     height: auto;
-    margin-bottom: 1.6em;
+    margin-bottom: 1em;
   }
 
   h1 {
@@ -34,12 +44,13 @@ $post-small-spacing: 15px;
     }
   }
 
-  .post-header {
+  .page-header {
+    font-size: 25px;
     margin-bottom: 2em;
     border-bottom: 1px solid $border-color;
   }
 
-  .post-meta {
+  .page-meta {
     display: block;
 
     span, time {
@@ -56,26 +67,26 @@ $post-small-spacing: 15px;
   blockquote,
   .highlight,
   .disqus {
-    margin-left: -($post-spacing-x);
-    margin-right: -($post-spacing-x);
+    margin-left: -($page-spacing-x);
+    margin-right: -($page-spacing-x);
   }
 
   .disqus {
     background-color: #f7f8f9;
     border-top: 1px solid #E3E3E3;
-    padding-bottom: $post-spacing-y;
+    padding-bottom: $page-spacing-y;
     padding-top: 2em;
   }
 
   .disqus,
   .highlight pre {
-    padding-left: $post-spacing-x;
-    padding-right: $post-spacing-x;
+    padding-left: $page-spacing-x;
+    padding-right: $page-spacing-x;
   }
 
   .highlight pre {
-    padding-top: $post-spacing-y;
-    padding-bottom: $post-spacing-y;
+    padding-top: $page-spacing-y;
+    padding-bottom: $page-spacing-y;
   }
 
   p:last-child {
@@ -83,12 +94,38 @@ $post-small-spacing: 15px;
   }
 }
 
+.page-gen {
+//  width: 100%;
+//  background-color: #fff;
+  font-size: 14px;
+  font-weight: $magi-font-weight-content;
+  line-height: $magi-line-height-content;
+  padding-bottom: 0;
+  margin-bottom: 10px;
+  overflow: hidden;
+  padding: $page-spacing-y ($page-spacing-x / 2) 0;
+  cursor: pointer;
+  float: left;
+  color: $magi-blue-color;
+  margin-left: $magi-margin-left;
+
+  &:hover,
+  &:active {
+    background-color: rgba(76, 217, 0, .1); 
+    text-decoration: underline;
+  }
+
+  @include media($screen-tablet) {
+    padding: 0 0 0 0;
+  }
+}
+
 body:not(.single) {
-  .post {
-    padding-bottom: $post-spacing-y;
+  .page {
+    padding-bottom: $page-spacing-y;
     margin-bottom: 4em;
 
-    .post-title {
+    .page-title {
       @include font-size(22px);
       margin-bottom: .2em;
 
@@ -98,11 +135,41 @@ body:not(.single) {
       }
     }
 
-    .post-header {
+    .page-header {
       margin-bottom: .5em;
     }
 
-    .post-title,
+    .page-title,
+    a.read-more {
+      text-decoration: none;
+      color: $txt-color;
+
+      &:focus,
+      &:hover {
+        color: $link-hover-color;
+      }
+    }
+  }
+
+    .page-gen {
+    padding-bottom: $page-spacing-y;
+    margin-bottom: 4em;
+
+    .page-gen-title {
+      @include font-size(22px);
+      margin-bottom: .2em;
+
+      @include media($screen-tablet) {
+        @include font-size(30px);
+        line-height: $line-height;
+      }
+    }
+
+    .page-gen-header {
+      margin-bottom: .5em;
+    }
+
+    .page-gen-title,
     a.read-more {
       text-decoration: none;
       color: $txt-color;
@@ -115,7 +182,7 @@ body:not(.single) {
   }
 }
 
-.post-footer {
+.page-footer {
   position: relative;
   margin: em(30px) 0 0;
   padding: em(40px) 0 0;
@@ -183,3 +250,41 @@ body:not(.single) {
     }
   }
 }
+
+.page-gen-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-left: $magi-margin-left;
+  font-weight: 500;
+  font-size: 18px;
+  color: $magi-black-color;
+}
+
+.page-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-left: $magi-margin-left;
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: $magi-black-color;
+}
+
+.page-sub-title {
+  margin-top: 15px;
+  margin-bottom: 5px;
+//  margin-left: $magi-margin-left;
+  font-weight: 500;
+  font-size: 15px;
+  color: $magi-black-color;
+  text-decoration: underline;
+}
+
+.page-default-margin {
+  margin-left: $magi-margin-left;
+}
+
+.page-default-margin-2 {
+  margin-left: 55px;
+}
+

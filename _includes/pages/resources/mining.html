@@ -1,0 +1,36 @@
+<div id="mining" class="page-title">Proof-of-Work Mining</div>
+<div class="block_table text-font-14px">
+<p>Proof-of-work mining utilizes a device's computing resources to build blocks one at a time. The building of a block that is censored by remaining devices (miners) accomplishes processing the transactions in MAGI's network as well. A block that once is built goes into the blockchain. The miner will receive a reward upon building a block. It should be noted, however, that MAGI's proof-of-Work mining does not guarantee the amount of reward proportional to hashrate of the miner. In the extreme condition, huge hashrate leads to trivial reward. </p>
+
+<p>At the present configuration, 100% mPoW reward goes to Miners, and no reward is reserved for the MAGI team.</p>
+
+<div class="page-sub-title">Download Miners</div>
+
+<div class="link">
+<div><a target="_blank" href="/download#mining-softwares">Link to CPU miners</a></div>
+<div><a target="_blank" href="/download#android-miner">Link to Android miner</a></div>
+</div>
+
+<div class="page-sub-title">Mining Pools</div>
+<p>If you plan pool mining, register one of the following pools. Once registered, create a worker that will be used by the miner to login. </p>
+<ui>
+    <li>Suprnova: <a target="_blank" href="http://xmg.suprnova.cc" class="black-color">http://xmg.suprnova.cc</a></li>
+    <li>MaxMiners: <a target="_blank" href="https://xmg.maxminers.net" class="black-color">https://xmg.maxminers.net</a></li>
+    <li>m-hash: <a target="_blank" href="https://pom.m-hash.com" class="black-color">https://pom.m-hash.com</a></li>
+    <li>MinerClaim: <a target="_blank" href="http://minerclaim.net" class="black-color">http://minerclaim.net</a></li>
+</ui>
+
+<div id="pool-mining" class="page-sub-title">Pool Mining</div>
+
+<p>Pool mining refers to that multiple miners contribute to the generation of a block; the block reward is divided among miners according to individual contributed hashrate. The basic command to run the miner is as follows: </p>
+
+{% highlight ruby %}
+minerd -o stratum+tcp://xmg.suprnova.cc:7128 -u Weblogin.WorkerName -p WorkerPassword -t thread_numbers -e cpu_efficiency
+{% endhighlight %}
+
+<p>Where "Weblogin.WorkerName"" and "WorkerPassword"" are the worker and password of the pool (example pool: xmg.suprnova.cc).</p>
+
+<div id="solo-mining" class="page-sub-title">Solo Mining</div>
+
+</div>
+

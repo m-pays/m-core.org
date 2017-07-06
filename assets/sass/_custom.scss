@@ -85,14 +85,71 @@ div.wrapper2{display:block; width:100%; margin:0; padding:0; text-align:left;}
 #container2 #content article img{float:left; width:80px; height:80px; margin:0px 10px 10px 0; padding:4px; border:1px solid #DEDEDE;}
 #container2 #content article footer{margin:10px 0 0 0;}
 
-.bluecolor {
+.blue-color {
   color: $magi-blue-color;
 }
 
-.greencolor {
+.green-color {
   color: $magi-green-color;
 }
 
-.redcolor {
+.red-color {
   color: $magi-red-color;
+}
+
+.black-color {
+  color: $magi-black-color;
+}
+
+.dark-blue-color {
+  color: $magi-dark-blue-color;
+}
+
+.dark-red-color {
+  color: $magi-dark-red-color;
+}
+
+.block_table {
+  content: " ";
+  display: table;
+  margin-left: $magi-margin-left;
+}
+
+.text-font-13px, .text-font-14px, .text-font-15px, .text-font-16px {
+//  font-weight: 500;
+//  font-size: 16px;
+  color: $magi-black-color;
+}
+
+.text-font-13px {
+  font-size: 13px;
+}
+
+.text-font-14px {
+  font-size: 14px;
+}
+
+.text-font-15px {
+  font-size: 15px;
+}
+
+.text-font-16px {
+  font-size: 16px;
+}
+
+p {
+  margin: 0 0 0.8em 0;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.link {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.txt-indent {  
+text-indent: 1em;  
 }

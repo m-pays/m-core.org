@@ -5,7 +5,7 @@ $download-spacing-x: 10px;
   @extend .card;
 //  width: 100%;
   background-color: #fff;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: $magi-font-weight-content;
   line-height: $magi-line-height-content;
   padding-bottom: 0;
@@ -13,10 +13,14 @@ $download-spacing-x: 10px;
   overflow: hidden;
   padding: $download-spacing-y ($download-spacing-x / 2) 0;
   cursor: pointer;
+  float: left;
+  color: $magi-blue-color;
+  margin-left: $magi-margin-left;
 
   &:hover,
   &:active {
     background-color: rgba(76, 217, 0, .1); 
+    text-decoration: underline;
   }
 
   @include media($screen-tablet) {
@@ -41,6 +45,7 @@ $download-spacing-x: 10px;
   }
 
   .download-header {
+    font-size: 25px;
     margin-bottom: 2em;
     border-bottom: 1px solid $border-color;
   }
@@ -89,6 +94,32 @@ $download-spacing-x: 10px;
   }
 }
 
+.download-gen {
+//  width: 100%;
+//  background-color: #fff;
+  font-size: 14px;
+  font-weight: $magi-font-weight-content;
+  line-height: $magi-line-height-content;
+  padding-bottom: 0;
+  margin-bottom: 10px;
+  overflow: hidden;
+  padding: $download-spacing-y ($download-spacing-x / 2) 0;
+  cursor: pointer;
+  float: left;
+  color: $magi-blue-color;
+  margin-left: $magi-margin-left;
+
+  &:hover,
+  &:active {
+    background-color: rgba(76, 217, 0, .1); 
+    text-decoration: underline;
+  }
+
+  @include media($screen-tablet) {
+    padding: 0 0 0 0;
+  }
+}
+
 body:not(.single) {
   .download {
     padding-bottom: $download-spacing-y;
@@ -109,6 +140,36 @@ body:not(.single) {
     }
 
     .download-title,
+    a.read-more {
+      text-decoration: none;
+      color: $txt-color;
+
+      &:focus,
+      &:hover {
+        color: $link-hover-color;
+      }
+    }
+  }
+
+    .download-gen {
+    padding-bottom: $download-spacing-y;
+    margin-bottom: 4em;
+
+    .download-gen-title {
+      @include font-size(22px);
+      margin-bottom: .2em;
+
+      @include media($screen-tablet) {
+        @include font-size(30px);
+        line-height: $line-height;
+      }
+    }
+
+    .download-gen-header {
+      margin-bottom: .5em;
+    }
+
+    .download-gen-title,
     a.read-more {
       text-decoration: none;
       color: $txt-color;
@@ -190,7 +251,35 @@ body:not(.single) {
   }
 }
 
-.dwnld_row_win, .dwnld_row_others{display:block; float:center; margin:0 35px 0 0;}
-.dwnld_row_win{width:155px;}
-.dwnld_row_others{width:155px;}
-.dwnld_lastbox{margin-right:0;}
+.download_title {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  margin-left: $magi-margin-left;
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: $magi-black-color;
+}
+
+.download_miner_title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: $magi-margin-left;
+  font-weight: 500;
+  font-size: 16px;
+  color: $magi-black-color;
+}
+
+.dwnld_row, .dwnld_row_win, .dwnld_row_lastbox
+{display:block; margin:0 35px 0 0; float: left;}
+.dwnld_row {width:155px;}
+.dwnld_row_win {width:155px;}
+.dwnld_row_lastbox {margin-right:0;}
+
+.download_miner {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display:block; 
+  margin:0 35px 0 0; 
+  float: left;
+}

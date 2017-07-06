@@ -5,7 +5,7 @@ $exchange-spacing-x: 10px;
   @extend .card;
 //  width: 100%;
   background-color: #fff;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: $magi-font-weight-content;
   line-height: $magi-line-height-content;
   padding-bottom: 0;
@@ -13,10 +13,14 @@ $exchange-spacing-x: 10px;
   overflow: hidden;
   padding: $exchange-spacing-y ($exchange-spacing-x / 2) 0;
   cursor: pointer;
+  float: left;
+  color: $magi-blue-color;
+  margin-left: $magi-margin-left;
 
   &:hover,
   &:active {
     background-color: rgba(76, 217, 0, .1); 
+    text-decoration: underline;
   }
 
   @include media($screen-tablet) {
@@ -41,6 +45,7 @@ $exchange-spacing-x: 10px;
   }
 
   .exchange-header {
+    font-size: 25px;
     margin-bottom: 2em;
     border-bottom: 1px solid $border-color;
   }
@@ -89,6 +94,32 @@ $exchange-spacing-x: 10px;
   }
 }
 
+.exchange-gen {
+//  width: 100%;
+//  background-color: #fff;
+  font-size: 14px;
+  font-weight: $magi-font-weight-content;
+  line-height: $magi-line-height-content;
+  padding-bottom: 0;
+  margin-bottom: 10px;
+  overflow: hidden;
+  padding: $exchange-spacing-y ($exchange-spacing-x / 2) 0;
+  cursor: pointer;
+  float: left;
+  color: $magi-blue-color;
+  margin-left: $magi-margin-left;
+
+  &:hover,
+  &:active {
+    background-color: rgba(76, 217, 0, .1); 
+    text-decoration: underline;
+  }
+
+  @include media($screen-tablet) {
+    padding: 0 0 0 0;
+  }
+}
+
 body:not(.single) {
   .exchange {
     padding-bottom: $exchange-spacing-y;
@@ -109,6 +140,36 @@ body:not(.single) {
     }
 
     .exchange-title,
+    a.read-more {
+      text-decoration: none;
+      color: $txt-color;
+
+      &:focus,
+      &:hover {
+        color: $link-hover-color;
+      }
+    }
+  }
+
+    .exchange-gen {
+    padding-bottom: $exchange-spacing-y;
+    margin-bottom: 4em;
+
+    .exchange-gen-title {
+      @include font-size(22px);
+      margin-bottom: .2em;
+
+      @include media($screen-tablet) {
+        @include font-size(30px);
+        line-height: $line-height;
+      }
+    }
+
+    .exchange-gen-header {
+      margin-bottom: .5em;
+    }
+
+    .exchange-gen-title,
     a.read-more {
       text-decoration: none;
       color: $txt-color;
@@ -190,7 +251,27 @@ body:not(.single) {
   }
 }
 
-.exchange_row_win, .exchange_row_others{display:block; float:center; margin:0 35px 0 0;}
-.exchange_row_win{width:200px;}
-.exchange_row_others{width:155px;}
-.exchange_lastbox{margin-right:0;}
+.exchange_title {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  margin-left: $magi-margin-left;
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: $magi-black-color;
+}
+
+.exchange_sub_title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: $magi-margin-left;
+  font-weight: 500;
+  font-size: 16px;
+  color: $magi-black-color;
+}
+
+.dwnld_row, .dwnld_row_win, .dwnld_row_lastbox
+{display:block; margin:0 35px 0 0; float: left;}
+.dwnld_row {width:155px;}
+.dwnld_row_win {width:155px;}
+.dwnld_row_lastbox {margin-right:0;}

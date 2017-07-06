@@ -1,14 +1,18 @@
 $magi-blue-color: #1d62f0;
 $magi-green-color: #4cd900;
 $magi-red-color: #f32853;
+$magi-dark-blue-color: #164dbc;
+$magi-dark-red-color: #d62248;
+$magi-black-color: #243756;
+
 //$magi-font-size-content: 0.95em;
 $magi-font-size-content: 16px;
 $magi-font-weight-content: 300;
 $magi-line-height-content: 1.4;
 
 // $font-family-base: "Raleway", "Droid Sans", Helvetica, sans-serif;
-$font-family-base: "Roboto", "Helvetica Neue", Helvetica, sans-serif;
-$font-family-heading: "Roboto", "Helvetica Neue", Helvetica, sans-serif;
+$font-family-base: "Arial", "Roboto", Helvetica, sans-serif;
+$font-family-heading: "Arial", "Roboto", Helvetica, sans-serif;
 $font-family-serif: "Droid Serif", sans-serif;
 $line-height: 1.4;
 $font-size-base: 18px;
@@ -30,12 +34,18 @@ $screen-desktop : 80em;
 //$primary-color: #f32853;
 $primary-color: $magi-blue-color;
 
+$magi-margin-left : 30px;
+$magi-margin-right : 30px;
+$magi-2margin-left : 60px;
+
 $white-color: #efefef;
 $silver-color: darken($white-color, 22%); // ~ #ccc
 $black-color: #000;
 $gray-color: darken($white-color, 42%); // ~ #999
 
-$bg-color: #efefef;
+//$bg-color: #efefef;
+//$bg-color: #fdfcff;
+$bg-color: #fbfbff;
 $txt-color: rgba(lighten($black-color, 3%), .9);
 
 $blue-color: $magi-blue-color;
