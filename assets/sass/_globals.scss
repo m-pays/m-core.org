@@ -316,7 +316,7 @@ pre {
   bottom: -80px;
   @include font-size(36px);
   @include transition(all .2s linear);
-  font-size: 2em !important;
+  font-size: 1.5em !important;
 
   &, &:hover, &:focus {
     color: $txt-color;

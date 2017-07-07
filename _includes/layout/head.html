@@ -49,9 +49,6 @@
 <meta name="twitter:image:src" content="{{ page_image }}">
 
 <!-- Favicons -->
-<link rel="apple-touch-icon" sizes="114x114" href="{{ 'icons/apple-touch-icon-114.png' | asset_path | prepend: site.baseurl | prepend: site.url }}">
-<link rel="apple-touch-icon" sizes="72x72" href="{{ 'icons/apple-touch-icon-72.png' | asset_path | prepend: site.baseurl | prepend: site.url }}">
-<link rel="apple-touch-icon" href="{{ 'icons/apple-touch-icon-57.png' | asset_path | prepend: site.baseurl | prepend: site.url }}">
 <link rel="shortcut icon" href="{{ 'icons/favicon.png' | asset_path | prepend: site.baseurl | prepend: site.url }}">
 
 <!-- rel prev and next -->
@@ -68,6 +65,8 @@
 
 {% stylesheet main %}
 {% javascript modernizr-custom data-cfasync="false" %}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <script type="application/ld+json">
 {

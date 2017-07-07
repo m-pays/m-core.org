@@ -5,13 +5,16 @@ $feature-spacing-x: 10px;
   @extend .card;
 //  background-color: #fff;
   background-color: #f8f8ff;
-  font-size: $magi-font-size-content;
+//  font-size: $magi-font-size-content;
+//  font-size: 16px;
   font-weight: $magi-font-weight-content;
   line-height: $magi-line-height-content;
   padding-bottom: 0;
-  margin-bottom: 0em;
+  margin-bottom: 0;
   overflow: hidden;
   padding: $feature-spacing-y ($feature-spacing-x / 2) 0;
+  float: left;
+//  width: 100%;
 
   &:hover,
   &:active {
@@ -30,7 +33,7 @@ $feature-spacing-x: 10px;
   }
 
   h1 {
-    font-size: 1.2em;
+    font-size: 18px;
     line-height: 1.5em;
     margin-bottom: .5em;
 
@@ -55,6 +58,12 @@ $feature-spacing-x: 10px;
 
     span, time, a {
       color: $txt-color;
+    }
+
+    a {
+      font-size: 18px;
+      font-family: Ubuntu;
+      text-decoration: none;
     }
   }
 
@@ -91,10 +100,11 @@ $feature-spacing-x: 10px;
 body:not(.single) {
   .feature {
     padding-bottom: $feature-spacing-y;
-    margin-bottom: 4em;
+    margin-bottom: 2em;
 
     .feature-title {
       @include font-size(22px);
+//      font-size: 18px;
       margin-bottom: .2em;
 
       @include media($screen-tablet) {
@@ -109,8 +119,10 @@ body:not(.single) {
 
     .feature-title,
     a.read-more {
+      font-size: 22px;
       text-decoration: none;
       color: $txt-color;
+      font-family: Arial;
 
       &:focus,
       &:hover {

@@ -3,7 +3,7 @@
 ====================================*/
 
 .footer {
-  padding: 5em 0 3em;
+  padding: 1em 0 1em;
   background: #f6f6f6;
   text-align: center;
 
@@ -13,13 +13,13 @@
     }
 
     @include media($screen-desktop) {
-      padding-left: 6em;
-      padding-right: 6em;
+      padding-left: 3em;
+      padding-right: 3em;
     }
   }
 
   .icons {
-    margin-bottom: 3em;
+    margin-bottom: 0.8em;
     display: none;
 
     @include media($screen-tablet) {
@@ -28,7 +28,8 @@
 
     li {
       display: inline-block;
-      padding-right: 2.5em;
+//      padding-right: 2.5em;
+      padding-right: 0.8em;
 
       &:last-child {
         padding-right: 0;
@@ -42,12 +43,16 @@
       @include border-radius(50%);
       text-align: center;
       display: inline-block;
-      width: 55px;
-      height: 55px;
-      line-height: 60px;
+//      width: 55px;
+//      height: 55px;
+//      line-height: 60px;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
 
       .fa {
-        font-size: 1.6em;
+//        font-size: 1.6em;
+        font-size: 1.1em;
       }
 
       &:hover,
@@ -62,6 +67,15 @@
           background-color: #3765A3;
         }
         &.icon-twitter {
+          background-color: #5EA9DD;
+        }
+        &.icon-youtube {
+          background-color: #5EA9DD;
+        }
+        &.icon-reddit {
+          background-color: #5EA9DD;
+        }
+        &.icon-slack {
           background-color: #5EA9DD;
         }
         &.icon-instagram {

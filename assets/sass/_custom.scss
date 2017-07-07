@@ -1,7 +1,27 @@
 .about {
   position: relative;
   width: 100%;
-  padding: 50px 0;
+  padding: 60px 0;
+}
+
+.about-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+//  font-weight: 450;
+//  font-family: Ubuntu;
+//  color: $magi-black-color;
+//  font-size: 1.75em;
+  font-size: 32px;
+  text-align: center;
+}
+
+.about-text {
+  margin-bottom: 20px;
+  color: $magi-black-color;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: left;
 }
 
 .container2 {
@@ -113,12 +133,18 @@ div.wrapper2{display:block; width:100%; margin:0; padding:0; text-align:left;}
   content: " ";
   display: table;
   margin-left: $magi-margin-left;
+  margin-right: $magi-margin-right;
+//  padding: 0 0 0 0;
 }
 
-.text-font-13px, .text-font-14px, .text-font-15px, .text-font-16px {
+.text-font-12px, .text-font-13px, .text-font-14px, .text-font-15px, .text-font-16px {
 //  font-weight: 500;
 //  font-size: 16px;
   color: $magi-black-color;
+}
+
+.text-font-12px {
+  font-size: 12px;
 }
 
 .text-font-13px {
@@ -135,6 +161,31 @@ div.wrapper2{display:block; width:100%; margin:0; padding:0; text-align:left;}
 
 .text-font-16px {
   font-size: 16px;
+}
+
+.text-gen-font-12px {
+  font-size: 12px;
+}
+
+.text-gen-font-13px {
+  font-size: 13px;
+}
+
+.text-gen-font-14px {
+  font-size: 14px;
+}
+
+.text-gen-font-15px {
+  font-size: 15px;
+}
+
+.text-gen-font-16px {
+  font-size: 16px;
+}
+
+.text-font-2 {
+  font-size: 22px;
+  font-family: Arial;
 }
 
 p {

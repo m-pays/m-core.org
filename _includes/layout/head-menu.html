@@ -8,9 +8,13 @@ http://opensource.org/licenses/MIT.
     {% include layout/head-logo.html %}
     <nav class="navbar">
       <ul>
+{% comment %}
+        <li><a href="/">Home</a></li>
+{% endcomment %}
         <li><a href="/getting-started">Getting Started</a></li>
         <li><a href="/download">Download</a></li>
         <li><a href="/resources">Resources</a></li>
+        <li><a href="/projects">Projects</a></li>
         <li><a href="/blog">Blog</a></li>
         <li><a href="#!" data-modal="modalSearch"><i class="fa fa-search"></i></a></li>
         <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}" target="_blank"><i class="fa fa-feed"></i></a></li>

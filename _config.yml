@@ -33,7 +33,6 @@ exclude:
 
 name: Coin MAGI
 title: Coin MAGI
-description: "Desenvolvedor Front-end/Wordpress, Design Responsivo, HTML5, CSS3 e JavaScript"
 meta_description: "Coin MAGI, cryptocurrency, Peer-to-Peer, Digital Currency"
 meta_keywords: "MAGI, coin, crypto, currency, peer-to-peer, digital, payment"
 url: http://www.m-core.org
@@ -47,7 +46,10 @@ email     : contact@m-core.org
 twitterofficial    : https://twitter.com/CoinMagi
 twittermarketing   : https://twitter.com/Coin_Magi_XMG
 facebook  : https://www.facebook.com/CoinMagi
-github    : http://github.com/m-coin
+github    : https://github.com/m-coin
+reddit    : https://www.reddit.com/r/coinmagi
+youtube    : https://www.youtube.com/user/TheCoinMagi
+slack    : https://m-pays.slack.com
 
 wallet_version: 1.3.1
 wallet_url : http://coinmagi.org/bin
