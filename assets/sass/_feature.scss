@@ -1,24 +1,27 @@
-$feature-spacing-y: 10px;
-$feature-spacing-x: 10px;
+$feature-spacing-y: 15px;
+$feature-spacing-x: 15px;
 
 .feature {
-  @extend .card;
+//  @extend .card;
+//  width: 100%;
 //  background-color: #fff;
   background-color: #f8f8ff;
-//  font-size: $magi-font-size-content;
-//  font-size: 16px;
+  font-size: 14px;
   font-weight: $magi-font-weight-content;
   line-height: $magi-line-height-content;
   padding-bottom: 0;
   margin-bottom: 0;
   overflow: hidden;
   padding: $feature-spacing-y ($feature-spacing-x / 2) 0;
+//  cursor: pointer;
   float: left;
-//  width: 100%;
+  color: $magi-blue-color;
+//  margin-left: $magi-margin-left;
 
   &:hover,
   &:active {
-//    background-color: rgba(29, 98, 240, .05); 
+    background-color: rgba(76, 217, 0, .05); 
+//    text-decoration: underline;
   }
 
   @include media($screen-tablet) {
@@ -29,11 +32,11 @@ $feature-spacing-x: 10px;
     display: block;
     max-width: 100%;
     height: auto;
-    margin-bottom: 1.6em;
+    margin-bottom: 1em;
   }
 
   h1 {
-    font-size: 18px;
+    font-size: 1.2em;
     line-height: 1.5em;
     margin-bottom: .5em;
 
@@ -43,8 +46,9 @@ $feature-spacing-x: 10px;
   }
 
   .feature-header {
-    margin-bottom: 2em;
-    border-bottom: 1px solid $border-color;
+    font-size: 25px;
+    margin-bottom: 0.5em;
+//    border-bottom: 1px solid $border-color;
   }
 
   .feature-meta {
@@ -58,12 +62,6 @@ $feature-spacing-x: 10px;
 
     span, time, a {
       color: $txt-color;
-    }
-
-    a {
-      font-size: 18px;
-      font-family: Ubuntu;
-      text-decoration: none;
     }
   }
 
@@ -97,6 +95,32 @@ $feature-spacing-x: 10px;
   }
 }
 
+.feature-gen {
+//  width: 100%;
+//  background-color: #fff;
+  font-size: 14px;
+  font-weight: $magi-font-weight-content;
+  line-height: $magi-line-height-content;
+  padding-bottom: 0;
+  margin-bottom: 10px;
+  overflow: hidden;
+  padding: $feature-spacing-y ($feature-spacing-x / 2) 0;
+  cursor: pointer;
+  float: left;
+  color: $magi-blue-color;
+  margin-left: $magi-margin-left;
+
+  &:hover,
+  &:active {
+    background-color: rgba(76, 217, 0, .1); 
+    text-decoration: underline;
+  }
+
+  @include media($screen-tablet) {
+    padding: 0 0 0 0;
+  }
+}
+
 body:not(.single) {
   .feature {
     padding-bottom: $feature-spacing-y;
@@ -104,11 +128,14 @@ body:not(.single) {
 
     .feature-title {
       @include font-size(22px);
-//      font-size: 18px;
-      margin-bottom: .2em;
+      margin-bottom: .1em;
+      color: $magi-blue-color;
+      font-weight: 400;
+      font-family: "Verdana";
 
       @include media($screen-tablet) {
-        @include font-size(30px);
+//        @include font-size(30px);
+        @include font-size(24px);
         line-height: $line-height;
       }
     }
@@ -119,10 +146,38 @@ body:not(.single) {
 
     .feature-title,
     a.read-more {
-      font-size: 22px;
+      text-decoration: none;
+//      color: $txt-color;
+
+      &:focus,
+      &:hover {
+        color: $link-hover-color;
+      }
+    }
+  }
+
+    .feature-gen {
+    padding-bottom: $feature-spacing-y;
+    margin-bottom: 4em;
+
+    .feature-gen-title {
+      @include font-size(22px);
+      margin-bottom: .2em;
+
+      @include media($screen-tablet) {
+        @include font-size(30px);
+        line-height: $line-height;
+      }
+    }
+
+    .feature-gen-header {
+      margin-bottom: .5em;
+    }
+
+    .feature-gen-title,
+    a.read-more {
       text-decoration: none;
       color: $txt-color;
-      font-family: Arial;
 
       &:focus,
       &:hover {
@@ -201,16 +256,40 @@ body:not(.single) {
   }
 }
 
-div.feature.feature_2_column {
-  border:1px solid red;
+.feature-gen-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+//  margin-left: $magi-margin-left;
+  font-weight: 500;
+  font-size: 18px;
+  color: $magi-black-color;
 }
 
-/*
-.feature_2_column{display:block; float:left; margin:0 10px 0 15px;}
-.feature_2_column{width:45%;}
+.feature-title {
+  margin-top: 0px;
+  margin-bottom: 5px;
+//  margin-left: $magi-margin-left;
+  font-weight: 500;
+//  font-size: 28px;
+//  text-transform: uppercase;
+  color: $magi-black-color;
+}
 
+.feature-sub-title {
+  margin-top: 15px;
+  margin-bottom: 5px;
+//  margin-left: $magi-margin-left;
+  font-weight: 500;
+  font-size: 15px;
+  color: $magi-black-color;
+  text-decoration: underline;
+}
 
-.feature_lastbox{margin-right:0;}
+.feature-default-margin {
+  margin-left: $magi-margin-left;
+}
 
-.lastbox{margin-right:0;}
-*/
+.feature-default-margin-2 {
+  margin-left: 55px;
+}
+

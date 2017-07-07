@@ -1,8 +1,12 @@
 <div id="mpow-mining" class="page-title">Proof-of-Work Mining</div>
 <div class="block_table text-font-14px">
-<p>Proof-of-work mining utilizes a device's computing resources to build blocks one at a time. The building of a block that is censored by remaining devices (miners) accomplishes processing the transactions in MAGI's network as well. A block that once is built goes into the blockchain. The miner will receive a reward upon building a block. It should be noted, however, that MAGI's proof-of-Work mining does not guarantee the amount of reward proportional to hashrate of the miner. In the extreme condition, huge hashrate leads to trivial reward. </p>
+<p>Proof-of-work mining utilizes a device's computing resources to build blocks one at a time. The building of a block that is censored by remaining devices (miners) accomplishes processing the transactions in MAGI's network as well. A block that once is built goes into the blockchain. The miner will receive a reward upon building a block. </p>
 
-<p>At the present configuration, 100% mPoW reward goes to Miners, and no reward is reserved for the MAGI team.</p>
+<p>It should be noted, however, that MAGI's proof-of-Work mining does not guarantee the amount of reward proportional to hashrate of the miner. In the extreme condition, huge hashrate leads to trivial reward. Thanks to the MAGI's PoW implementation, <a href="#mpow-solo-mining" class="black-color">solo-mining</a> remains to be feasible.</p>
+
+<p>In terms of the MAGI's the proof-of-Work protocol, controlling the CPU efficiency during mining at a fixed rate or on a varying basis in accordance with the block reward is strongly recommended. The CPU efficiency can be changed by using either the built-in "-e" flag (<a href="/download#cpu-miner-source" class="black-color">source code</a>, <a href="/download#cpu-m-minerd" class="black-color">command-line binaries: m-minerd</a> and <a href="/download#cpu-m-cpuminer-qt" class="black-color">GUI binaries: m-cpuminer-qt</a>), or external programs used in miners provided by <a href="/download#cpu-miner-Spexx" class="black-color">Spexx</a> and <a href="/download#cpu-miner-NeedIfFindIt" class="black-color">NeedIfFindIt</a>. </p>
+
+<p>At the present configuration, 100% mPoW reward goes to Miners, and no reward is reserved for any parties, including the MAGI team.</p>
 
 <div class="page-sub-title">Download Miners</div>
 
@@ -22,7 +26,11 @@
 
 <div id="mpow-pool-mining" class="page-sub-title">Pool Mining</div>
 
-<p>Pool mining refers to that multiple miners contribute to the generation of a block; the block reward is divided among miners according to individual contributed hashrate. The basic command to run the miner is as follows: 
+<p>Pool mining refers to that multiple miners contribute to the generation of a block; the block reward is divided among miners according to individual contributed hashrate. </p>
+
+<p>For easy mining, GUI versions of miners are recommended: <a href="/download#cpu-m-cpuminer-qt" class="black-color">GUI binaries: m-cpuminer-qt</a>, and <a href="/download#cpu-miner-NeedIfFindIt" class="black-color">the Sweet Spot Magi Controller by NeedIfFindIt</a>, both of which can adjust the CPU efficiency. </p>
+
+<p>The basic command to run the miner is as follows: 
 
 {% highlight ruby %}
 minerd -o stratum+tcp://xmg.suprnova.cc:7128 -u Weblogin.WorkerName -p WorkerPassword -t thread_numbers -e cpu_efficiency
@@ -59,9 +67,9 @@ where 8232 is the rpcport, randome_username and randome_rpcpassword are username
 <div class="block_table text-font-14px">
 <p>Different from PoW mining, in proof-of-stake (PoS) minting one can mine and validate block transactions according to the amount of coins in wallet and the amount of time staked, the combination of which composes the computational power for PoS, i.e., coin age, or stake weight. </p>
 
-<p>In MAGI's implementation of PoS (aka mPoS), the stake weight is conditionally proportional to amount of coins and duration of stake. The maximum staking time is limited within one week; that is, the offline time should not exceed more than a week. There is no advantage of gaining offline coin age for more than four days. In addition, increase in the number of coins in stake does not always lead to higher stake weight. </p>
+<p>In MAGI's implementation of PoS (aka mPoS), the stake weight is conditionally proportional to amount of coins and duration of stake. The maximum staking time is limited within one week; that is, the offline time should not exceed more than a week. There is no advantage of gaining offline coin age for more than a week. In addition, increase in the number of coins in stake does not always lead to higher stake weight. </p>
 
-<p>To stake with mPoS, it is recommended to keep at most 1000 XMG in one address. If one has more than 1000 XMG in wallet, split the coins into multiple fractions, and send these fractions to different addresses. Before enabling stake, the following settings are strongly recommended to be set in magi.conf:  
+<p>To stake with mPoS, it is recommended to keep at most 1000 XMG in one address. If one has more than 1000 XMG in wallet, split the coins into multiple fractions, and send each of them to an address. Before enabling stake, the following settings are recommended to be set in magi.conf (these numbers might not guarantee the best results):  
 
 {% highlight ruby %}
 # Transaction under stake with a value greater than the threshold is being splitted

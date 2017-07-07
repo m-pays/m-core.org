@@ -2,12 +2,60 @@
 
 <div class="block_table text-font-14px black-color">
 <ul style="list-style-type:square">
+    <li><a href="#faq-what-is-coin-magi" class="black-color">What is Coin MAGI?</a></li>
+    <li><a href="#faq-why-energy-saving" class="black-color">Why does MAGI set energy saving as one of the goals?</a></li>
+    <li><a href="#faq-how-is-energy-saving-achieved" class="black-color">How is energy saving achieved?</a></li>
+    <li><a href="#faq-what-is-m-core" class="black-color">What is m-core?</a></li>
+    <li><a href="#faq-what-is-m-wallet" class="black-color">What is m-wallet?</a></li>
+    <li><a href="#faq-what-is-m-pays" class="black-color">What is m-pays?</a></li>
+    <li><a href="#faq-what-is-mpow" class="black-color">What is mPoW (MAGI's Proof-of-Work)?</a></li>
+    <li><a href="#faq-what-is-mpos" class="black-color">What is mPoS (MAGI's Proof-of-Stake)?</a></li>
     <li><a href="#faq-staking-not-enough-weight" class="black-color">The staking has "Not enough weight", what should I do?</a></li>
 </ul>
 </div>
 
 <div class="block_table text-font-14px">
 
+<div id="faq-what-is-coin-magi" class="page-sub-title">What is Coin MAGI?</div>
+<p>Coin MAGI is a digital payment solution. MAGI is decentralized and running constantly without downtime and the need of interference by intermediary, authorities and censorship. People can make payments using MAGI to anyone in the world freely. In the meantime, anyone can issue MAGI coins through their personal computers, and software-based mining or minting processes. MAGI is implemented utilizing the proof-of-work and proof-of-sake protocols. MAGI puts efforts on removing the competitive nature of mining, and particularly focuses on fairness, cost effective and energy efficiency when issuing coins and maintaining the public ledger and the blockchain system.</p>
+
+<div id="faq-why-energy-saving" class="page-sub-title">Why does MAGI set energy saving as one of the goals?</div>
+<p>In the consensus-based proof of work protocol, the miner having greater hashrate and hence less time of finding block owns the most probable chance of voting for the blocks and receiving the block rewards. This leads to profit-driven hardware competition race in order to acquire more computational power than the others. The concern raised is the global energy consumption by the cryptocurrency. For example, "One Bitcoin transaction required the same amount of electricity as powering 1.57 American households for one day (data from 2015)." "In a recent research, experts argued that bitcoin transactions may consume as much electricity as Denmark by 2020." (<a target="_blank" href="https://blockgeeks.com/guides/proof-of-work-vs-proof-of-stake/" class="black-color">Link</a>). </p>
+
+<p>One of the solutions has come to the scheme of utilizing the PoS only. This fully removes the PoW mining. However, how the PoS alone fulfills coin distribution and decentralization, and how the PoS itself solves the coin age concern should be carefully inspected.</p>
+
+<p>Although MAGI has implemented revisions to the generic PoS, i.e., mPoS, and improved how coin age is manipulated, we see that PoW should be the main channel to distribute coins. Energy saving in PoW mining remains to be resolved. </p>
+
+<div id="faq-how-is-energy-saving-achieved" class="page-sub-title">How is energy saving achieved?</div>
+<p>Notice that the hardware computational power race is profit driven, the block reward is where one should be looking into. A ’soft’ control of the network activity through varying reward is introduced in MAGI. Contrary to constant rewarding in a certain period implemented
+in most of cryptocurrency, such as bitcoin, we propose a network-dependent rewarding model
+system, primarily including two phases: 1) activities encouraging phase in which higher rewards are
+issued at higher network activities; and 2) discouraging further increase of activities by reducing
+rewards. The advantages of this system include 1) fair distribution of rewards among a variety of
+contributors, and 2) enforcing a limit to the network activity and hence the cost of maintaining the
+PoW network. </p>
+
+<p>For details, see the article -  <a target="_blank" href="https://arxiv.org/abs/1409.7948" class="black-color">A network-dependent rewarding system: proof-of-mining</a>. </p>
+
+<div id="faq-what-is-m-core" class="page-sub-title">What is m-core?</div>
+<p>m-core is the core of the MAGI currency system. m-core stores a public ledger of MAGI and determines the best block chain containing valid transactions. m-core is implemented as m-wallet, which has two forms, aka, the daemon and the GUI wallet (currently using Qt implementation).</p>
+
+<div id="faq-what-is-m-wallet" class="page-sub-title">What is m-wallet?</div>
+<p>m-wallet is the implementation of m-core, with two forms, the daemon and the GUI wallet (currently using Qt implementation). Running the m-wallet is sufficient for operations, including maintaining the blockchain, receiving and sending coins.</p>
+
+<div id="faq-what-is-m-pays" class="page-sub-title">What is m-pays?</div>
+<p>MagiPay is a payment gateway for Coin MAGI. The motivation of developing MagiPay is to have the MAGI being used in a relatively easy way. MagiPay is standalone and unique to coin MAGI. Features: </p>
+<ul>
+    <li>Using MagiPay is totally free for Merchants; customers have to pay transaction fees. </li>
+    <li>MagiPay is uniquely designed for Coin Magi, independent of any other payment gateways. Custom requests will be sent to tailoring MagiPay functions.</li>
+    <li>No payments are held by our server. Funds are available to merchants upon 6 confirmations. </li>
+</ul>
+
+<div id="faq-what-is-mpow" class="page-sub-title">What is mPoW (MAGI's Proof-of-Work)?</div>
+<p>mPoW, the magi's proof-of-work (PoW) protocol, in addition to required computational works to be done to deter denial of service attacks, is also a network-dependent rewarding model system. The mPoW rewards participants who solve complicated cryptographical questions not only to validate transactions but also to create new blocks and generate coins. The amount of coins generated are constantly monitored by the mPoW protocol and tuned on the basis of an attraction-repulsion model: 1) incremental rewarding to stimulate network activities during passive mining phase, and 2) decremental rewarding to mitigate redundant mining sources during agressive mining phase. mPoW can effectively govern the magi's network and limit it under a certain scale, enabling the general devices to be capable of mining magi. ++ For details - <a href="https://arxiv.org/abs/1409.7948" class="black-color">A network-dependent rewarding system: proof-of-mining</a>.</p>
+
+<div id="faq-what-is-mpos" class="page-sub-title">What is mPoW (MAGI's Proof-of-Stake)?</div>
+<p>mPoS, the magi's proof-of-stake (PoS) protocol, aims to achieve distributed consensus through operations in addition to mPoW. mPoS is designed such that it rejects potential attacks through accumulating a large amount of coins or offline staking time, either of which leads to security concerns. Similar to mPoW's operation, mPoS is constructed in accordance with the concept of the attraction-repulsion model. Magi hybridizes mPoW with mPoS, and integrate both consensus approaches in order to acquire benefits from the two mechanisms and create a more robust payment system.</p>
 
 <div id="faq-staking-not-enough-weight" class="page-sub-title">The staking has "Not enough weight", what should I do?</div>
 <p>For the regular PoS, "Not enough weight" means insufficient staking time. For Magi's PoS (mPoS), however, the cause can be correlated with the over-time staking. The latter is a typical issue raised by people from time to time. There is only one way to solve this which can be done via resetting staking from scratch: send XMG to another address in the same or another wallet. You may want to use the "Coin control" feature in order to select the input sources. Do not try to stake with a significant amount of XMG that mitigates the weight as well. Once this is done, remaining the wallet running shall gains some staking weights. </p>

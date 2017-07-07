@@ -4,10 +4,9 @@
   box-shadow: 0px .0375em .125em 0px rgba(0, 0, 0, .05);
   color: #484848;
   cursor: default;
-  font-weight: 400;
-  font-size: 1.05em;
+  font-size: 1.25em;
   height: 4.5em;
-  right: 0em;
+  left: 0;
   line-height: 4.4em;
 
   h1 {
@@ -53,8 +52,8 @@
     }
 
     nav {
-      right: 0em;
-      top: 1.2em;
+//      right: -8em;
+      top: 0em;
 
       a {
         color: #eee;
@@ -85,11 +84,10 @@
   height: inherit;
   line-height: inherit;
   position: absolute;
-  right: 5%;
-  top: 1.0em;
+  right: 0em;
+  top: 0em;
   vertical-align: middle;
-//  width: 15em;
-//  width: 60%;
+//  width: 45em;
 
   ul {
     list-style: none;
@@ -99,8 +97,7 @@
 
   li {
     display: inline-block;
-//    margin-left: 1.8em;
-    margin-left: 0;
+    margin-left: 1.8em;
     padding-left: 0;
 
     &:first-child {
@@ -113,8 +110,7 @@
     }
 
     @include media($screen-tablet) {
-//      margin-left: 1.0em;
-      margin-left: 0.65em;
+      margin-left: 1.0em;
     }
   }
 
