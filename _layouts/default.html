@@ -10,6 +10,12 @@
       {% include layout/banner.html %}
     {% endif %}
 
+    {% include layout/content.html %}
+
+{% comment %}
+    {% include layout/footer.html %}
+    {% include layout/search-modal.html %}
+
     <main class="wrapper container" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
       {{ content }}
     </main>
@@ -22,5 +28,7 @@
     {% if page.slug == 'projects' %}
         {% javascript jquery.github %}
     {% endif %}
+{% endcomment %}
+
   </body>
 </html>{% endstrip %}

@@ -1,25 +1,16 @@
 ---
 layout: post
 title: "MagiPay - Standalone Payment Gateway for Coin MAGI"
-permalink: title
 date: 2015-03-06 15:25:51
-comments: true
+comments: false
 description: "MagiPay - Standalone Payment Gateway for Coin MAGI"
 keywords: ""
 categories:
-
+- Projects
 tags:
-
+- Projects
 ---
 
-<br>
-<div class="block_table text-font-14px black-color">
-<ul style="list-style-type:square">
-    <li><a href="#magipay" class="black-color">The MagiPay Project</a>
-</ul>
-</div>
-
-<div id="magipay" class="page-gen-title">The MagiPay Project</div>
 <div class="block_table text-font-14px">
 <p>MagiPay is a payment gateway for Coin MAGI. The motivation of developing MagiPay is to have the MAGI being used in a relatively easy way. MagiPay is standalone and unique to coin MAGI. Features: </p>
 <ul>
@@ -43,11 +34,11 @@ tags:
 <div class="page-sub-title">1. Registration & create MagiPay box</div>
 
 <div class="block_table">
-<p><img src="/assets/img/magipay/mp1.png" width=50%></p>
+<p><img src="/assets/img/blog/2015-03-06-magipay/mp1.png"></p>
 
 <p>After registration, click "Create Payment Box" and fill out relevant blocks: </p>
 
-<p><img src="/assets/img/magipay/mp2-01.png" width=90%><br>
+<p><img src="/assets/img/blog/2015-03-06-magipay/mp2.png"><br>
 
 Notice the callback URL is the path where the php file (i.e., "magipay.callback.php") is placed (example: http://162.245.217.165/magipay.callback.php).</p>
 
@@ -61,11 +52,11 @@ Notice the callback URL is the path where the php file (i.e., "magipay.callback.
 <p>2) Modify db_connect.php and magipay.keys.php (for details see <a target="_blank" href="https://www.m-pays.com/merchant_guide">https://www.m-pays.com/merchant_guide</a>)</p>
 <p>3) Run magipay.createtable.php through browser, example</p>
 
-<p><img src="/assets/img/magipay/mp3.png" width=50%></p>
+<p><img src="/assets/img/blog/2015-03-06-magipay/mp3.png"></p>
 
 <p>4) Change the following file to enable MagiPay payment option for your online shop:<br>
 
-<img src="/assets/img/magipay/mp4.png"><br>
+<img src="/assets/img/blog/2015-03-06-magipay/mp4.png"><br>
 
 Notice the action upon receiving payment as highlighted. </p>
 
@@ -76,19 +67,19 @@ Notice the action upon receiving payment as highlighted. </p>
 <div class="block_table">
 
 <p>1) Checkout <br>
-<img src="/assets/img/magipay/mp5.png" width=90%></p>
+<img src="/assets/img/blog/2015-03-06-magipay/mp5.png"></p>
 
 <p>2) Pay through m-wallet<br>
 
-<img src="/assets/img/magipay/mp6.png" width=90%></p>
+<img src="/assets/img/blog/2015-03-06-magipay/mp6.png"></p>
 
 <p>3) Payment received <br>
 
-<img src="/assets/img/magipay/mp7.png" width=90%></p>
+<img src="/assets/img/blog/2015-03-06-magipay/mp7.png"></p>
 
 <p>4) Payment transfered to local merchant's wallet <br>
 
-<img src="/assets/img/magipay/mp8.png" width=90%></p>
+<img src="/assets/img/blog/2015-03-06-magipay/mp8.png"></p>
 
 <br><br><br><br>
 

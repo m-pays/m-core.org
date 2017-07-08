@@ -1,9 +1,9 @@
 ---
-layout: default
+layout: blog
 disqus: false
 archive: false
 post_class: post-template
-slug: single
+slug: home
 comments: true
 ---
 
@@ -51,12 +51,10 @@ comments: true
   {{content}}
 
   <footer class="post-footer">
-    {% if site.author %}
     <section class="author">
-      <h4>{{ site.author.name }}</h4>
-      <p>{{ site.author.bio }}</p>
+      <h4>{{ site.name }}</h4>
+      <p>{{ site.intro }}</p>
     </section>
-    {% endif %}
 
     {% include layout/share.html %}
 

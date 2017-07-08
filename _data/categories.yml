@@ -4,3 +4,15 @@
 
 - slug: main
   name: Main
+
+- slug: news
+  name: News
+
+- slug: projects
+  name: Projects
+
+- slug: development
+  name: Development
+
+- slug: mining
+  name: Mining

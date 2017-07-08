@@ -94,12 +94,17 @@ body:not(.single) {
 
     .post-title {
 //      @include font-size(22px);
-      @include font-size(16px);
+      @include font-size(14px);
       margin-bottom: .2em;
+//      color: $magi-blue-color;
+      font-weight: 400;
+//      font-family: "Verdana";
+//      font-family: "Droid Sans";
+      font-family: "Arial";
 
       @include media($screen-tablet) {
 //        @include font-size(30px);
-        @include font-size(16px);
+        @include font-size(14px);
         line-height: $line-height;
       }
     }
