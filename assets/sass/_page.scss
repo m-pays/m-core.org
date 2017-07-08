@@ -288,3 +288,7 @@ body:not(.single) {
   margin-left: 55px;
 }
 
+.page-row, .page-row-lastbox
+{display:block; margin:0 35px 0 0; float: left;}
+.page-row {width:155px;}
+.page-row-lastbox {width:155px; margin-right:0;}

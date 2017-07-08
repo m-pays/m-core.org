@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   width="100"
+   height="100"
+   viewBox="0 0 100 100"
+   sodipodi:docname="bitcointalk.svg">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1232"
+     inkscape:window-height="733"
+     id="namedview4"
+     showgrid="false"
+     inkscape:zoom="1.8219479"
+     inkscape:cx="31.468039"
+     inkscape:cy="57.065408"
+     inkscape:window-x="196"
+     inkscape:window-y="22"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <path
+     style="fill:#ffb629;fill-opacity:1"
+     d="M 46.685084,72.84624 C 39.828812,72.097288 33.557269,69.074322 28.623013,64.14004 17.097969,52.614999 17.129994,33.350716 28.693438,21.787278 c 5.744953,-5.744952 12.951565,-8.692285 21.253725,-8.692285 8.527819,0 15.244262,2.749623 21.170595,8.666989 3.588598,3.583184 5.772575,7.051409 7.287289,11.57249 6.980075,20.834112 -9.925526,41.892505 -31.71994,39.511768 z M 57.322128,69.468069 C 65.197867,67.229799 72.103925,61.23034 75.138004,53.990968 76.625448,50.441919 77.10853,48.326369 77.30494,44.50162 78.090835,29.198327 66.906359,16.654682 51.519627,15.582777 41.927498,14.914548 31.899514,20.107901 26.712569,28.429988 16.48858,44.833709 25.672844,65.915596 44.817667,69.989045 c 3.078869,0.655105 9.274489,0.396953 12.504461,-0.520976 z M 47.194379,64.377521 c -5.125206,-0.720837 -8.646034,-2.50324 -12.396033,-6.275429 -4.391113,-4.417109 -6.278173,-8.962261 -6.278173,-15.121652 0,-6.172403 1.989765,-10.903564 6.44411,-15.3225 4.227194,-4.193591 8.86586,-6.07905 14.932795,-6.069651 3.852943,0.006 6.725945,0.62447 9.608779,2.068591 10.201114,5.110099 14.600597,16.672746 10.430201,27.412383 -3.467774,8.930291 -13.234075,14.645467 -22.741679,13.308258 z m 0.679065,-6.124895 0,-2.716248 1.188359,0 1.18836,0 0,2.716248 0,2.716248 1.697654,0 1.697654,0 0,-2.672408 0,-2.67238 2.122072,-0.228953 c 2.918414,-0.31484 5.488858,-1.610979 6.638158,-3.347232 0.805552,-1.216906 0.916402,-1.716045 0.916402,-4.125819 0,-3.182817 -0.60102,-4.368025 -2.776874,-5.476009 -0.71361,-0.363381 -1.359022,-0.696773 -1.434202,-0.74083 -0.07522,-0.04409 0.27162,-0.401353 0.77073,-0.793932 1.284194,-1.010146 1.912461,-2.405319 1.912461,-4.246854 0,-2.930968 -2.157629,-4.964161 -6.11156,-5.759071 l -1.867424,-0.375413 -0.169763,-2.690819 -0.169762,-2.69081 -1.612777,-0.103486 -1.612769,-0.103483 0,2.734848 0,2.734852 -1.18836,0 -1.188359,0 0,-2.734852 0,-2.734848 -1.61277,0.103483 -1.612777,0.103486 -0.09916,2.631366 -0.09917,2.631365 -3.381021,0 -3.381022,0 0,1.697664 0,1.697654 1.550212,0 c 2.994719,0 2.863687,-0.410316 2.863687,8.967938 0,6.265895 -0.104273,8.351512 -0.43107,8.622757 -0.237098,0.196764 -1.11564,0.406459 -1.952302,0.465972 l -1.521232,0.108242 -0.102622,1.782538 -0.102623,1.782538 3.243284,0 3.243284,0 0,2.716248 0,2.716248 1.697654,0 1.697655,0 0,-2.716248 z m 0,-10.355696 0,-3.565075 3.066696,0 c 4.597581,0 6.10064,0.854233 6.10064,3.467209 0,2.591654 -1.782457,3.662942 -6.094685,3.662942 l -3.072651,0 0,-3.565076 z m 0,-10.391658 0,-3.431247 2.693324,0.122286 c 3.237523,0.14703 4.541488,0.882862 4.716493,2.661515 0.28686,2.915296 -1.121107,4.075459 -4.948213,4.077442 l -2.461604,0.0027 0,-3.431274 z"
+     id="path4138"
+     inkscape:connector-curvature="0" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="14.662476"
+     y="93.357864"
+     id="text4140"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan4142"
+       x="14.662476"
+       y="93.357864"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.75px;line-height:125%;font-family:'Droid Sans';-inkscape-font-specification:'Droid Sans, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">BitcoinTalk Forum</tspan></text>
+</svg>

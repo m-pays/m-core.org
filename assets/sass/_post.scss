@@ -8,6 +8,10 @@ $post-small-spacing: 15px;
 
 .post {
   @extend .card;
+//  background-color: #fff;
+  background-color: #f8f8ff;
+  font-size: 14px;
+  color: $magi-black-color;
   padding-bottom: 0;
   margin-bottom: 0em;
   overflow: hidden;
@@ -89,11 +93,13 @@ body:not(.single) {
     margin-bottom: 4em;
 
     .post-title {
-      @include font-size(22px);
+//      @include font-size(22px);
+      @include font-size(16px);
       margin-bottom: .2em;
 
       @include media($screen-tablet) {
-        @include font-size(30px);
+//        @include font-size(30px);
+        @include font-size(16px);
         line-height: $line-height;
       }
     }
