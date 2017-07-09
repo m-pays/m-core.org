@@ -1715,7 +1715,7 @@ body.modal--open {
   .button, .older-posts,
   .newer-posts, input[type="submit"], input[type="reset"], input[type="button"] {
     display: block;
-    margin: 0 0 1em 0;
+    margin: 0 0 1.2em 0;
     width: 100%;
   }
 }
@@ -1773,6 +1773,29 @@ body.modal--open {
   color: #aaa;
 }
 /* line 103, ../sass/_buttons.scss */
+.button.btn-gs, .btn-gs.older-posts,
+.btn-gs.newer-posts, input.btn-gs[type="submit"], input.btn-gs[type="reset"], input.btn-gs[type="button"] {
+  background-color: #1d62f0;
+  border-color: transparent;
+  font-size: 13px;
+  font-weight: 550;
+  line-height: 1.8em;
+  padding: 0em 0.75em 0em 0.75em;
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+}
+/* line 120, ../sass/_buttons.scss */
+.button.btn-gs:hover, .btn-gs.older-posts:hover,
+.btn-gs.newer-posts:hover, input.btn-gs[type="submit"]:hover, input.btn-gs[type="reset"]:hover, input.btn-gs[type="button"]:hover, .button.btn-gs:active, .btn-gs.older-posts:active,
+.btn-gs.newer-posts:active, input.btn-gs[type="submit"]:active, input.btn-gs[type="reset"]:active, input.btn-gs[type="button"]:active {
+  background-color: rgba(76, 217, 0, 0.65);
+}
+/* line 125, ../sass/_buttons.scss */
+.button.btn-gs.icon:before, .btn-gs.icon.older-posts:before,
+.btn-gs.icon.newer-posts:before, input.btn-gs.icon[type="submit"]:before, input.btn-gs.icon[type="reset"]:before, input.btn-gs.icon[type="button"]:before {
+  color: #aaa;
+}
+/* line 130, ../sass/_buttons.scss */
 .button.btnc, .btnc.older-posts,
 .btnc.newer-posts, input.btnc[type="submit"], input.btnc[type="reset"], input.btnc[type="button"] {
   background-color: #1d62f0;
@@ -1783,18 +1806,18 @@ body.modal--open {
   line-height: 2.35em;
   padding: 0em 0.75em 0em 0.75em;
 }
-/* line 117, ../sass/_buttons.scss */
+/* line 144, ../sass/_buttons.scss */
 .button.btnc:hover, .btnc.older-posts:hover,
 .btnc.newer-posts:hover, input.btnc[type="submit"]:hover, input.btnc[type="reset"]:hover, input.btnc[type="button"]:hover, .button.btnc:active, .btnc.older-posts:active,
 .btnc.newer-posts:active, input.btnc[type="submit"]:active, input.btnc[type="reset"]:active, input.btnc[type="button"]:active {
   background-color: rgba(76, 217, 0, 0.65);
 }
-/* line 122, ../sass/_buttons.scss */
+/* line 149, ../sass/_buttons.scss */
 .button.btnc.icon:before, .btnc.icon.older-posts:before,
 .btnc.icon.newer-posts:before, input.btnc.icon[type="submit"]:before, input.btnc.icon[type="reset"]:before, input.btnc.icon[type="button"]:before {
   color: #aaa;
 }
-/* line 128, ../sass/_buttons.scss */
+/* line 155, ../sass/_buttons.scss */
 .button.btndwnld, .btndwnld.older-posts,
 .btndwnld.newer-posts, input.btndwnld[type="submit"], input.btndwnld[type="reset"], input.btndwnld[type="button"] {
   color: #1d62f0;
@@ -1807,18 +1830,18 @@ body.modal--open {
   width: 8em;
   padding: 0em 0em;
 }
-/* line 142, ../sass/_buttons.scss */
+/* line 169, ../sass/_buttons.scss */
 .button.btndwnld:hover, .btndwnld.older-posts:hover,
 .btndwnld.newer-posts:hover, input.btndwnld[type="submit"]:hover, input.btndwnld[type="reset"]:hover, input.btndwnld[type="button"]:hover, .button.btndwnld:active, .btndwnld.older-posts:active,
 .btndwnld.newer-posts:active, input.btndwnld[type="submit"]:active, input.btndwnld[type="reset"]:active, input.btndwnld[type="button"]:active {
   background-color: rgba(76, 217, 0, 0.75);
 }
-/* line 147, ../sass/_buttons.scss */
+/* line 174, ../sass/_buttons.scss */
 .button.btndwnld.icon:before, .btndwnld.icon.older-posts:before,
 .btndwnld.icon.newer-posts:before, input.btndwnld.icon[type="submit"]:before, input.btndwnld.icon[type="reset"]:before, input.btndwnld.icon[type="button"]:before {
   color: #aaa;
 }
-/* line 152, ../sass/_buttons.scss */
+/* line 179, ../sass/_buttons.scss */
 .button.disabled, .disabled.older-posts,
 .disabled.newer-posts, input.disabled[type="submit"], input.disabled[type="reset"], input.disabled[type="button"], .button:disabled, .older-posts:disabled,
 .newer-posts:disabled, input[type="submit"]:disabled, input[type="reset"]:disabled, input[type="button"]:disabled {
