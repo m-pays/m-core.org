@@ -52,7 +52,7 @@ youtube    : https://www.youtube.com/user/TheCoinMagi
 slack    : https://m-pays.slack.com
 
 wallet_version: 1.4.5.1
-wallet_url : http://coinmagi.org/bin
+wallet_url : http://m-core.org/bin
 source_url_github : https://github.com/magi-project/magi
 
 # Plugin: jekyll-assets
